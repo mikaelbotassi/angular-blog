@@ -1,14 +1,14 @@
 <article class="card border-0 position-relative">
 
   <div class="card-header p-0">
-    <img src="https://blog.iprocess.com.br/wp-content/uploads/2021/11/placeholder.png" alt="image here" class="mb-3 img-fluid">
-    <legend class="small text-center text-secondary">< Image legend here ></legend>
+    <img src="{{ photoCover }}" alt="{{ photoLegend }}" class="mb-3 img-fluid">
+    <legend class="small text-center text-secondary mb-3">< {{ photoLegend }} ></legend>
   </div>
 
   <div class="card-body p-0">
-    <p class="small text-secondary mb-3">August 23, 2023, 10:00 AM</p>
-    <h2 class="fw-bold mb-3">How to Create a Successful Website in 7 Steps</h2>
-    <p class="text-secondary">In today's digital age, having a strong online presence is essential, whether you're an entrepreneur, blogger, or creative professional. Building a successful website can boost your visibility and credibility on the internet. In this post, we'll explore seven essential steps to help you create a successful website from scratch.</p>
+    <p class="small text-secondary mb-3"> {{ cardDate }} </p>
+    <h2 class="fw-bold mb-3">{{ cardTitle }}</h2>
+    <p class="text-secondary">{{ cardDescription }}</p>
   </div>
 
   <a href="#" class="stretched-link" aria-label="Link to any page"></a>
