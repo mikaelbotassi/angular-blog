@@ -1,0 +1,25 @@
+<main id="post">
+
+  <div class="container">
+
+      <div class="mx-auto">
+        <div class="d-flex align-items-center gap-2">
+          <a routerLink="" class="text-white text-decoration-none"> <i class="fa-solid fa-caret-left"></i> Voltar </a>
+          <h5 class="text-uppercase text-secondary m-0">Blog</h5>
+        </div>
+        <h1 class="fw-bold mb-2"> {{contentTitle}} </h1>
+        <div class="small text-secondary">
+            {{ contentDate }}
+        </div>
+      </div>
+
+      <div class="d-md-block ratio ratio-16x9 shadow-lg my-5">
+          <img src="{{ photoCover }}" alt="Image for example here">
+      </div>
+
+      <div class="mx-auto wrapper pt-0">
+          <p> {{ contentDescription }} </p>
+      </div>
+
+  </div>
+</main>
