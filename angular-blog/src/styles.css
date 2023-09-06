@@ -1,1 +1,83 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap');
+
+:root{
+  --bs-light: #ececec;
+  --bs-body-font-family: "Poppins", sans-serif;
+  /* --bs-primary: #ececec; */
+  --bs-body-color: #ececec;
+  --bs-dark: #111;
+  --bs-body-bg: #111;
+  --bs-secondary: #2C2C2C;
+  --bs-emphasis-color-rgb: 255,255,255;
+}
+
+*{
+  margin:0;
+  padding:0
+}
+
+html, body { height: 100% }
+
+body { overflow-x: hidden }
+
+main,
+section,
+.wrapper { padding: calc(5rem + 4vw) 0 }
+
+.wrapper-sm { padding: calc(4rem + 3vw) 0 }
+
+@media(max-width:1320px){
+  [class*="container"] { padding: 0 1.5rem !important }
+}
+
+@media(max-width:767.98px){
+  [class*="container"] { padding: 0 2rem !important }
+}
+
+::-webkit-scrollbar {
+  padding: 1px;
+  background: transparent;
+  height: .5rem;
+  width: .5rem }
+
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-thumb {
+  padding: 3px }
+
+::-webkit-scrollbar-thumb { background: var(--bs-primary) }
+::-webkit-scrollbar-thumb:hover { background: var(--bs-primary)  }
+
+[class~="ratio"]{
+  position: relative;
+  overflow: hidden;
+  display: block }
+
+[class~="ratio"] img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 100%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  object-fit: cover }
+
+img[width]{
+  width: 100%;
+  height: auto;
+  aspect-ratio: attr(width) / attr(height) }
+
+.icon {
+  display: inline-block;
+  position: relative }
+
+.icon-16 { width: 16px; height: 16px }
+.icon-24 { width: 24px; height: 24px }
+.icon-32 { width: 32px; height: 32px }
+.icon-48 { width: 48px; height: 48px }
+.icon-64 { width: 64px; height: 64px }
+.icon-96 { width: 96px; height: 96px }
+
+.icon.text-primary    { fill: var(--bs-primary); color: var(--bs-primary) }
+.icon.text-secondary  { fill: var(--bs-secondary); color: var(--bs-secondary) }
+.icon.text-white      { fill: #FFF }
+.icon.text-whatsapp   { fill: #03B35B }
