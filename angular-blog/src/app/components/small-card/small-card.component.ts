@@ -7,11 +7,10 @@ import { Component, Input } from '@angular/core';
 })
 export class SmallCardComponent {
 
+  @Input() id:number = 0;
   @Input() photoCover:string = "";
   @Input() cardTitle:string = "";
-  @Input() cardData:string = "";
+  @Input() cardDate:string = "";
   @Input() cardDescription:string = "";
-  @Input() cardLink:string = "";
-  @Input() cardLinkTarget:string | null = null;
 
 }

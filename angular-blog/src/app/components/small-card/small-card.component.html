@@ -5,11 +5,11 @@
     </div>
     <div class="col-7">
       <div class="card-body py-0">
-        <p class="small text-secondary">{{ cardData }}</p>
+        <p class="small text-secondary">{{ cardDate }}</p>
         <h5 class="card-title fw-bold">{{ cardTitle }}</h5>
         <p class="card-text small text-secondary">{{ cardDescription }}</p>
       </div>
     </div>
-    <a href="{{ cardLink ? cardLink : '#'}}" class="stretched-link" target="{{cardLinkTarget ? cardLinkTarget : '_self'}}" aria-label="Link for example"></a>
+    <a [routerLink]="['content', id]" class="stretched-link"></a>
   </div>
 </article>

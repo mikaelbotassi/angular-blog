@@ -8,12 +8,24 @@
   <div class="container">
     <div class="justify-content-center row g-5">
       <div class="col-lg-6">
-        <app-big-card></app-big-card>
+        <app-big-card
+        [id]="mainPub.id"
+        [photoCover]="mainPub.photoCover"
+        [photoLegend]="mainPub.photoLegend"
+        [cardDate]="mainPub.date"
+        [cardTitle]="mainPub.title"
+        [cardDescription]="mainPub.description"
+        ></app-big-card>
       </div>
       <div class="col-lg-6 d-flex flex-column gap-3">
-        <app-small-card></app-small-card>
-        <app-small-card></app-small-card>
-        <app-small-card></app-small-card>
+        <app-small-card
+        *ngFor="let pub of pubs"
+        [id]="pub.id"
+        [photoCover]="pub.photoCover"
+        [cardDate]="pub.date"
+        [cardTitle]="pub.title"
+        [cardDescription]="shortenString(pub.description, 20)"
+        ></app-small-card>
       </div>
     </div>
   </div>
